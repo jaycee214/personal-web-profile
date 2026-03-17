@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;  
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  align-items: center;
+  z-index: 1;
+}
+
+nav a {
+  margin-left: 15px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #00e0ff;
+}
+
+.hero {
+  text-align: center;
+  padding: 150px 0 50px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+}
+
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about p {
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  width: 500px;
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.2);
+}
+
+img {
+  border-radius: 50%;
+  margin: 20px 0;
+  transition: transform 0.3s;
+  width: 150px;      
+  height: 150px;     
+  object-fit: cover; 
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #00e0ff;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav a {
+    margin: 5px 10px;
+  }
+}
