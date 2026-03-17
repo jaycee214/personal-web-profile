@@ -94,6 +94,18 @@ img:hover {
   transform: scale(1.1);
 }
 
+button {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: none;
+  background: #00e0ff;
+  color: black;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
 .socials a {
   margin: 0 10px;
   color: #00e0ff;

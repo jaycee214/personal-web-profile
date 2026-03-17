@@ -1,3 +1,13 @@
+function showFunFact() {
+  const facts = [
+    "I can play musical instruments by ear.",
+    "I am a huge fan of alternative rock music.",
+    "I am a cat person."
+  ];
+
+  const randomFact = facts[Math.floor(Math.random() * facts.length)];
+  document.getElementById("funFact").textContent = randomFact;
+}
 
 document.querySelectorAll("nav a").forEach(link => {
   link.addEventListener("click", function(e) {
