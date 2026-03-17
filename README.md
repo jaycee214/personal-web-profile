@@ -7,11 +7,11 @@
 ---
 ## Features
 
-- ✅ Single-page layout
-- ✅ Responsive design
-- ✅ Modern UI 
-- ✅ Scroll animations
-- ✅ Hover effects and transitions
+- Single-page layout
+- Responsive design
+- Modern UI 
+- Scroll animations
+- Hover effects and transitions
 
 ---
 
