@@ -132,6 +132,7 @@ footer {
   header {
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
   }
 
   nav {
